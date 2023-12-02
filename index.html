@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+
+<div class="admin-dashboard">
+    <div class="header">
+        <input type="text" class="search-bar" placeholder="Search">
+        <button class="search-icon">🔍</button>
+        <button class="delete-selected-btn">Delete Selected</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th><input type="checkbox" class="select-all-checkbox"></th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <!-- Add more columns as needed -->
+                <th>Actions</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <!-- User rows will be dynamically populated here -->
+        </tbody>
+    </table>
+    <div class="pagination">
+        <button class="first-page">First</button>
+        <button class="previous-page">Previous</button>
+        <span class="page-numbers"></span>
+        <button class="next-page">Next</button>
+        <button class="last-page">Last</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
